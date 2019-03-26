@@ -1,7 +1,12 @@
-<h1>Oh, so you remember the password, huh <b>{{name}}</b>?</h1>
-<div class="container">
-  <hr>
-  <div class="col-xs-12">
-    You can manage your todos <a routerLink="/todos">here</a>
-  </div>
+<h1>Hello, {{ name }}</h1>
+<hr>
+<div>Here is your <a routerLink="/todos">to-do list</a> </div>
+
+<div class="container mb-10">Click here to see personalized message</div>
+<div>
+  <button class="btn btn-success" (click)="getWelcomeMessageWithParameter()">Get message!</button>
+</div>
+<div class="container" *ngIf="welcomeMessageFromService">
+  <h2>Your customized welcome message</h2>
+  {{ welcomeMessageFromService }}
 </div>
