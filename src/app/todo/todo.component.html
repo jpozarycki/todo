@@ -7,7 +7,12 @@
         <input type="text" [(ngModel)]="todo.description" class="form-control" name="description" required></fieldset>
       <fieldset class="form-group">
         <label>Target date</label>
-        <input type="date" [(ngModel)]="todo.targetDate" class="form-control" name="targetDate" required></fieldset>
+        <input type="date"
+               [ngModel]="todo.targetDate | date: 'yyyy-MM-dd'"
+               (ngModelChange)="todo.targetDate = $event"
+               class="form-control"
+               name="targetDate"
+               required></fieldset>
     </div>
 
   </div>
