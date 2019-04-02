@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TodoDataService} from '../service/data/todo-data.service';
 import {Router} from '@angular/router';
 

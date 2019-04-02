@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { HardcodedAuthenticationService } from './hardcoded-authentication.service';
+import {HardcodedAuthenticationService} from './hardcoded-authentication.service';
 
 describe('HardcodedAuthenticationService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
