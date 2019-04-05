@@ -36,7 +36,7 @@ export class TodoComponent implements OnInit {
       this.todoService.createTodo('jpozarycki', this.todo)
         .subscribe(
           response => {
-            console.log(response);
+            // console.log(response);
             this.router.navigate(['todos']);
           }
         );
